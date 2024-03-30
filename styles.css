@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2f5f9;
+}
+
+main {
+  max-width: 100%;
+  padding: 1rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  max-width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.card-header {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+
+.card-header img:nth-child(1) {
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.card-content,
+.card-footer {
+  padding: 0 1.8rem;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.card-footer img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+}
+
+.card-content h2 {
+  margin-bottom: 0.5rem;
+}
+.card-content p {
+  margin-bottom: 1.5rem;
+}
+
+.card-content h2 {
+  line-height: 1.4;
+  font-weight: 900;
+  color: #111729;
+  letter-spacing: -1px;
+  word-spacing: 2px;
+  font-size: 1.6em;
+}
+
+.card-content p {
+  color: #677489;
+  line-height: 1.5;
+}
+
+hr {
+  border-color: #677489;
+  border-width: 0.1px;
+  opacity: 0.05;
+}
+
+.card-footer h3 {
+  color: #111729;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.card-footer p {
+  color: #677489;
+  font-size: 0.8em;
+  font-weight: 400;
+}
